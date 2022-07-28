@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>student_login</title>
+        <style></style>
+        <script>
+            var name=document.getElementById("name").value;
+            var pwd= document.getElementById("pwd").value;
+             var alpha=/[/w]/;
+             var spaces=/[/S]/;
+             if(alpha.test(name)){
+                window.alert("please enter correct value");
+             }
+        </script>
+    </head>
+    <body align="center"><form>
+        <h1>Student Login</h1>
+        <table align="center">
+            <tr>
+                <td>
+                    <b><label for="name">User no/email Id :- </label></b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" size="30" 
+                    maxlength="40" minlenght="3" autocomplete="on"
+                    autofocus required placeholder="Enter your Name" name="name" id="name" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b><label for="pwd">Password :- </label></b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" size="30" 
+                    maxlength="16" minlenght="8" 
+                    autofocus required placeholder="Enter your Password" name="pwd" id="pwd" >
+                </td>
+            </tr>
+            <tr>
+               <td> <a href="forgot_password.html" target="_blank">forgot password ?</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Login" onclick="checker()" > 
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
