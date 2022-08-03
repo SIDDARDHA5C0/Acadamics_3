@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            DineBooking
+        </title>
+            </head>
+    <body align="center">
+            <h1> Dine Booking</h1>
+            <form>
+                <label for="vn">Visitor Name:-</label>
+                <input type="text"  Maxlength="20" autofocus name="vn"
+                id="vn"><br>
+                <label for="nom">Number of members:-</label>
+                <input type="tel" minlength="2" name="nom" id="nom"  ><br>
+                <label for="co">Contact No:-</label>
+                <input type="tel"  name="co" id="co" ><br>
+                <label for="em">email:-</label>
+                <input type="email" ><br>
+                Types of Food : 
+                <input type="checkbox" name="check" id="c1" checked>South Indian
+                <input type="checkbox" name="check" id="c2">North Indian
+                <input type="checkbox" name="check" id="c3">Chinese
+                <input type="checkbox" name="check" id="c4">Western
+                <br> 
+                Room Status:
+                <input type="radio" name="rad" id="r1"  checked>AC
+                <input type="radio" name="rad" id="r2" >Non-AC
+                <br>
+                Venue Preference: <select name="selector" id="selector" >
+                     <option  id="s1" value="">-select-</option>
+                  <option  id="s1"> Arena</option>
+                    <option  id="s1"> Fiesta</option>
+                    <option  id="s1"> Vista</option>
+                    <option  id="s1"> Mythri</option>
+                    <option  id="s1">Magna</option>
+                    <option  id="s1">Oasis</option>
+                    <option  id="s1" disabled >Amoeba</option>
+                    
+                </select>
+                <br>
+                <br>
+                <input type="submit"  value="Book">
+                <input type="reset" >
+             </form>
+    </body>
+</html>

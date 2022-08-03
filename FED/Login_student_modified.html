@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>student_login</title>
+        <style>
+            table{
+                border: 2px solid black;
+                background-color: azure;
+                border-spacing: 2px;
+                margin-left:auto;
+                margin-right:auto;
+                
+ 
+                
+            }
+            body{
+                background-color: bisque;
+                vertical-align: auto;
+            }
+            td{
+                padding:10px;
+            }
+            form{
+                vertical-align:-webkit-baseline-middle;
+            }
+        </style>
+        <script>
+            function checker(){
+            var name=document.getElementById("name").value;
+            var pwd= document.getElementById("pwd").value;
+             var email_=/^[a-zA-Z0-9+_.-]+@gmail.com$/;
+                var password_=/^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,16}$/;
+             if(!email_.test(name)){
+                window.alert ("please enter valid email id");
+             }
+             if(!password_.test(pwd)){
+                window.alert("please match the following criteria");
+             }}
+        </script>
+    </head>
+    <body align="center"><form>
+<br><br><br><br><br><br>
+        <h1>Student Login</h1>
+        <table align="center">
+            <tr>
+                <td>
+                    <b><label for="name">Email Id :- </label></b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" size="30" 
+                    maxlength="40" minlenght="12" autocomplete="on"
+                    autofocus required placeholder="Enter Mail Id" name="name" id="name" >
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <b><label for="pwd">Password :- </label></b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" size="30" 
+                    maxlength="16" minlength="8" 
+                    autofocus required placeholder="Enter your Password" name="pwd" id="pwd" >
+                </td>
+            </tr>
+           
+               <td> <a href="forgot_password.html" target="_blank">forgot password ?</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Login" onclick="checker()" > 
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
